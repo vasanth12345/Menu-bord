@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+ background: #edefef;
+ font-family: 'Mate SC', serif;
+}
+
+.main{
+  min-height:100vh;
+  max-height:auto;
+  width:100%;
+  position:relative;
+  overflow-x:hidden;
+}
+
+.head{
+  text-align:center;
+  width:100%;
+  height:auto;
+  padding:20px;
+  margin:10px;
+}
+
+.head p{
+  position:relative;
+  padding:5px;
+  color:#449be8;
+  font-weight:900;
+  font-size:50px;
+  text-shadow:0 0 ;
+}
+
+.head p::before{
+  position:absolute;
+  content:'';
+  bottom:0px;
+  left:50%;
+  transform:translateX(-50%);
+  width:90px;
+  height:4px;
+  background:#000;
+  border-radius:15px;
+}
+
+.btn-box{
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  width:100%;
+  height:auto;
+  position:relative;
+  margin:10px 0px;
+}
+
+.btn-box button{
+  flex:1;
+  padding:10px 0px;
+  margin:5px;
+  border-radius:10px;
+  border:none;
+  outline: none;
+  background:#000;
+  font-weight:600;
+  color:#fff;
+  border:2px solid transparent;
+  transition:0.5s;
+}
+
+.btn-box button:hover{
+  border:2px solid #000;
+  background:none;
+  color:#000;
+}
+
+.product{
+  position:relative;
+  width:100%;
+  height:auto;
+  margin-top:15px;
+  padding:15px;
+  
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.p-box{
+  margin:15px;
+  transition:.5s ease;
+  width:250px;
+  height:270px;  
+  border-radius:10px;
+  position:relative;
+  padding:5px;
+  border:4px solid #449be8;
+  overflow:scroll;
+}
+
+.p-box:hover{
+  background:#449be8;
+  color:#fff;
+}
+.p-box:hover .second{
+  color:#fff;
+} 
+
+
+.img{
+  position:relative;
+  height:55%;
+  width:100%;
+  background:#449be8;
+  border-radius:5px;
+  overflow:hidden;
+}
+img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.second{
+display:flex;
+justify-content:space-between;
+align-items:center; 
+width:100%;
+height:auto;
+padding:7px;
+color:#449be8;
+font-weight:600;
+font-size:20px;
+border-bottom:1px solid #000;
+}
+
+.p-decrib{
+  font-weight:600;
+  font-size:18px;
+  width:100%;
+  height:40%;
+  padding:10px;
+  text-align:center;
+}
+.second button{
+  font-size:20px;
+  background:none;
+  border:none;
+  outline:none;
+  background:none;
+  color:#449be8;
+}
+.second button:hover{
+  color:#000;
+}
+
